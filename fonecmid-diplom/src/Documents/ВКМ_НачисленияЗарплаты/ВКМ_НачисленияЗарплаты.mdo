@@ -69,6 +69,7 @@
   <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <forms uuid="96613f74-38ba-4aa7-8d54-27981b046fb5">
@@ -113,47 +114,55 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="70a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b00">
-      <name>Оклад</name>
+    <attributes uuid="1a659706-1256-4869-a1f9-da4d369114be">
+      <name>ПериодНачало</name>
       <synonym>
         <key>ru</key>
-        <value>Оклад</value>
+        <value>Период начало</value>
       </synonym>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
+        <types>Date</types>
+        <dateQualifiers/>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="80b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c10">
-      <name>СуммаПроцентОтРабот</name>
+    <attributes uuid="cf531228-33d1-436f-95a7-ab1c2f374413">
+      <name>ПериодКонец</name>
       <synonym>
         <key>ru</key>
-        <value>Сумма % от работ</value>
+        <value>Период конец</value>
       </synonym>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
+        <types>Date</types>
+        <dateQualifiers/>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5bd67bca-2357-44a6-917e-cd729e631909">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="90c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d20">
-      <name>НДФЛ</name>
+      <name>Сумма</name>
       <synonym>
         <key>ru</key>
-        <value>НДФЛ</value>
+        <value>Сумма</value>
       </synonym>
       <type>
         <types>Number</types>

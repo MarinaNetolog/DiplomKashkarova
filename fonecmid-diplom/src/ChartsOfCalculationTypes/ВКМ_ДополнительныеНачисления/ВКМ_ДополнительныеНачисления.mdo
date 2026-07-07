@@ -189,6 +189,13 @@
     </standardAttributes>
   </standardTabularSections>
   <predefined>
+    <items id="9c0e1a55-aad7-4570-a9ec-8791269b4d99">
+      <name>ПроцентОтРабот</name>
+      <description>Процент от работ</description>
+      <code xsi:type="core:StringValue">
+        <value>ПроцентОт</value>
+      </code>
+    </items>
     <items id="b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e">
       <name>Премия</name>
       <description>Фиксированная премия</description>
